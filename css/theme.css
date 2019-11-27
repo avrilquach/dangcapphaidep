@@ -2283,11 +2283,43 @@ section.contact #form-contact input[type='submit'] {
   max-width: 100%; }
 
 .main-spa-1 .owl-item {
-  text-align: center; }
+  text-align: center;
+  padding: 15px; }
 
 .main-spa-1 h3 {
   font-size: 16px;
   color: #000; }
+
+.main-spa-2 .owl-item {
+  padding: 15px; }
+
+.main-spa-2 .item {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  display: block;
+  background: #fbf3f3; }
+  .main-spa-2 .item .caption {
+    padding: 15px 15px 30px 15px;
+    text-align: center; }
+    .main-spa-2 .item .caption h3 {
+      font-size: 18px;
+      color: #000;
+      margin: 0 0 5px 0; }
+    .main-spa-2 .item .caption p {
+      font-size: 16px;
+      color: #636363;
+      margin: 0 0 20px 0; }
+    .main-spa-2 .item .caption span {
+      width: 135px;
+      height: 35px;
+      border-radius: 5px;
+      border: 1px solid #0f890e;
+      color: #0f890e;
+      display: block;
+      line-height: 33px;
+      margin: 0 auto; }
+  .main-spa-2 .item:hover {
+    border-bottom: 2px solid #0f890e; }
 
 .main-spa-custom .owl-nav {
   position: absolute;
@@ -2295,13 +2327,39 @@ section.contact #form-contact input[type='submit'] {
   top: 45%; }
   .main-spa-custom .owl-nav i {
     color: #b1b1b1;
-    font-size: 50px; }
+    font-size: 30px; }
   .main-spa-custom .owl-nav .owl-prev {
     left: -60px;
     position: absolute; }
   .main-spa-custom .owl-nav .owl-next {
     right: -60px;
     position: absolute; }
+
+.main-customer .bg_ {
+  background: #fcf7f7;
+  padding: 30px 50px 70px 50px;
+  text-align: center; }
+  .main-customer .bg_ p {
+    font-size: 16px;
+    color: #000;
+    margin: 0 0 15px 0; }
+  .main-customer .bg_ span.name {
+    font-size: 20px;
+    color: #0f890e;
+    text-transform: uppercase; }
+
+.main-customer .caption {
+  text-align: center;
+  width: 235px;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 60px;
+  z-index: 10; }
+
+.main-customer.owl-carousel .owl-item img {
+  width: auto; }
 
 footer .footer-top {
   background: #f5f4f4;

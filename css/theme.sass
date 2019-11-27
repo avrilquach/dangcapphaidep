@@ -2695,9 +2695,40 @@ section
 .main-spa-1
   .owl-item
     text-align: center
+    padding: 15px
   h3
     font-size: 16px
     color: #000
+.main-spa-2
+  .owl-item
+    padding: 15px
+  .item
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3)
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3)
+    display: block
+    background: #fbf3f3
+    .caption
+      padding: 15px 15px 30px 15px
+      text-align: center
+      h3
+        font-size: 18px
+        color: #000
+        margin: 0 0 5px 0
+      p
+        font-size: 16px
+        color: #636363
+        margin: 0 0 20px 0
+      span
+        width: 135px
+        height: 35px
+        border-radius: 5px
+        border: 1px solid #0f890e
+        color: #0f890e
+        display: block
+        line-height: 33px
+        margin: 0 auto
+    &:hover
+      border-bottom: 2px solid #0f890e
 .main-spa-custom
   .owl-nav
     position: absolute
@@ -2706,7 +2737,7 @@ section
 
     i
       color: #b1b1b1
-      font-size: 50px
+      font-size: 30px
 
     .owl-prev
       left: -60px
@@ -2715,7 +2746,32 @@ section
     .owl-next
       right: -60px
       position: absolute
+.main-customer
+  .bg_
+    background: #fcf7f7
+    padding: 30px 50px 70px 50px
+    text-align: center
+    p 
+      font-size: 16px
+      color: #000
+      margin: 0 0 15px 0
+    span.name
+      font-size: 20px
+      color: #0f890e
+      text-transform: uppercase
+  .caption
+    text-align: center
+    width: 235px
+    position: relative
+    left: 0
+    right: 0
+    margin: 0 auto
+    bottom: 60px
+    z-index: 10
 
+  &.owl-carousel .owl-item
+    img
+      width: auto
 footer
   .footer-top
     background: #f5f4f4
