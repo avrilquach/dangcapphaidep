@@ -155,6 +155,27 @@ $(document).ready(function() {
 						}
 				}
 	});
+	var spa1 = $('.main-spa-1');
+	spa1.owlCarousel({
+			loop: true,
+			nav: true,
+			navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+			items: 3,
+			autoplay: true,
+			smartSpeed: 200,
+			responsiveClass:true,
+				responsive:{
+						0:{
+								items:1
+						},
+						768:{
+								items:3
+						},
+						1200:{
+								items:3
+						}
+				}
+	});
 	$(window).on('scroll', function() {
 			var wtop = $(window).scrollTop();
 			if (wtop > 500) {
