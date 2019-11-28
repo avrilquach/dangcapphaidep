@@ -2993,6 +2993,51 @@ section
     width: 100%
   .content_map
     text-align: center
+.main-video
+  width: 100%
+  .carousel-item
+    &::before
+      content: ""
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(0,0,0,0.5)
+    .popup-youtube
+      position: absolute
+      top: 40%
+      left: 0
+      right: 0
+      text-align: center
+      i
+        font-size: 100px
+        color: #fff
+  .carousel-indicators
+    bottom: 30px
+    li
+      width: 125px
+      border-radius: 5px
+      margin: 0 5px
+      display: inline-block
+      height: 100%
+      img 
+        border-radius: 5px
+      &.active
+        border: 2px solid #0f8a0e
+    ._prev
+      position: absolute
+      left: 0
+    ._next
+      position: absolute
+      right: 0
+    ._prev, ._next
+      top: 22px
+      i
+        font-size: 30px
+        color: #b1b1b1
 footer
   .footer-top
     background: #f5f4f4
@@ -3348,64 +3393,3 @@ footer
 
   &.active
     right: 30px
-.product-slider
-  padding: 45px
-
-  #carousel
-    border: 4px solid #1089c0
-    margin: 0
-
-  #thumbcarousel
-    margin: 12px 0 0
-    padding: 0 45px
-
-    .item
-      text-align: center
-
-      .thumb
-        border: 4px solid #cecece
-        width: 20%
-        margin: 0 2%
-        display: inline-block
-        vertical-align: middle
-        cursor: pointer
-        max-width: 98px
-
-        &:hover
-          border-color: #1089c0
-
-  .item img
-    width: 100%
-    height: auto
-
-.carousel-control
-  color: #0284b8
-  text-align: center
-  text-shadow: none
-  font-size: 30px
-  width: 30px
-  height: 30px
-  line-height: 20px
-  top: 23%
-
-  &:hover, &:focus, &:active
-    color: #333
-
-.carousel-caption
-  font: normal normal normal 30px/26px FontAwesome
-
-.carousel-control
-  .fa
-    font: normal normal normal 30px/26px FontAwesome
-
-  background-color: rgba(0, 0, 0, 0)
-  bottom: auto
-  font-size: 20px
-  left: 0
-  position: absolute
-  top: 30%
-  width: auto
-
-  &.right, &.left
-    background-color: rgba(0, 0, 0, 0)
-    background-image: none

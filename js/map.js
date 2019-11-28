@@ -1,4 +1,5 @@
 (function () {
+  $( "#datepicker" ).datepicker();
 // Google Map
 let map;
 document.addEventListener("DOMContentLoaded",() => {
