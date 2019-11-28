@@ -2361,6 +2361,45 @@ section.contact #form-contact input[type='submit'] {
 .main-customer.owl-carousel .owl-item img {
   width: auto; }
 
+.main-bang-gia ._item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  padding: 20px 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .main-bang-gia ._item ._left {
+    padding: 0 20px 0 0; }
+    .main-bang-gia ._item ._left h4 {
+      font-size: 20px;
+      color: #000;
+      margin: 0 0 10px 0; }
+    .main-bang-gia ._item ._left p {
+      padding: 0;
+      font-size: 16px; }
+  .main-bang-gia ._item ._right {
+    text-align: right; }
+    .main-bang-gia ._item ._right span.price {
+      display: block;
+      font-size: 20px;
+      margin: 0 0 10px 0; }
+    .main-bang-gia ._item ._right a {
+      width: 80px;
+      height: 25px;
+      border-radius: 20px;
+      background: #0f890e;
+      display: block;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      line-height: 25px; }
+
+.section-booking {
+  background: url("../img/spa/bg.jpg") top center no-repeat;
+  height: 1137px; }
+
 footer .footer-top {
   background: #f5f4f4;
   border-top: 1px solid #ebebeb;
