@@ -201,7 +201,7 @@ $(document).ready(function() {
 	customer.owlCarousel({
 			loop: true,
 			nav: true,
-			navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+			navText: ['<i class="fa fa-arrow-left" aria-hidden="true"></i>', '<i class="fa fa-arrow-right" aria-hidden="true"></i>'],
 			items: 1,
 			autoplay: true,
 			smartSpeed: 200,
@@ -219,6 +219,8 @@ $(document).ready(function() {
 				}
 	});
 	$( "#datepicker" ).datepicker();
+	
+	
 	$(window).on('scroll', function() {
 			var wtop = $(window).scrollTop();
 			if (wtop > 500) {
