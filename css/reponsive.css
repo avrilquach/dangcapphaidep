@@ -14,10 +14,12 @@
       border-bottom: none; }
     header .menu-mobile ul li a {
       color: #212121; }
-  header .search, header .nav-top .nav-it_rh {
+  header .search {
     display: none; }
   header .nav-top {
     padding: 10px 0; }
+    header .nav-top .nav-it_rh {
+      display: none; }
     header .nav-top a.top {
       display: block;
       position: absolute;
@@ -99,7 +101,21 @@
     .video_small:last-child {
       margin: 30px 0 0 0; }
     .video_small .bg > img {
-      height: 100%; } }
+      height: 100%; }
+  .section-trai-nghiem-dich-vu {
+    display: block; }
+    .section-trai-nghiem-dich-vu ._right {
+      width: 100%; }
+      .section-trai-nghiem-dich-vu ._right::before {
+        display: none; }
+      .section-trai-nghiem-dich-vu ._right ._content {
+        max-width: 100%; }
+  .section-booking .booking {
+    width: 100%; }
+  .main-spa-custom .owl-nav .owl-prev {
+    left: 0; }
+  .main-spa-custom .owl-nav .owl-next {
+    right: 0; } }
 
 @media (max-width: 767px) {
   section.filters.filters-desktop {
@@ -269,7 +285,32 @@
       width: 100%; }
   .video .caption p {
     display: none; }
+  .section-trai-nghiem-dich-vu ._right {
+    padding: 15px; }
+  .heading2 h2 span::before, .heading2 h2 span::after {
+    display: none; }
+  .main-video .carousel-indicators {
+    position: unset;
+    margin-top: 10%; }
+    .main-video .carousel-indicators ._next, .main-video .carousel-indicators ._prev {
+      top: auto; }
+  .main-video .carousel-item .popup-youtube i {
+    font-size: 30px; }
+  .main-customer .bg_ {
+    padding: 15px 15px 70px 15px; }
+  .main-customer .owl-nav .owl-prev {
+    left: 5%; }
+  .main-customer .owl-nav .owl-next {
+    right: 5%; }
+  .section-booking {
+    background: #fcf7f7;
+    padding: 15px;
+    height: auto; }
+    .section-booking .booking {
+      padding: 15px; }
+      .section-booking .booking .submit {
+        width: 100%; }
   footer .footer-top .col-md-6, footer .footer-bottom .col-md-6 {
     margin: 0 0 30px 0; }
-    footer .footer-top .col-md-6:last-child, footer .footer-bottom .col-md-6:last-child {
-      margin: 0; } }
+  footer .footer-top .col-md-6:last-child, footer .footer-bottom .col-md-6:last-child {
+    margin: 0; } }
