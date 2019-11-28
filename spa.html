@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="css/owl-carousel2/owl.carousel.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
   <link rel="stylesheet" type="text/css" href="css/theme.css">
   <link rel="stylesheet" type="text/css" href="css/reponsive.css">
   <title>Đẳng cấp phái đẹp</title>
@@ -322,17 +323,43 @@
     <section class="section-booking">
       <form class="booking" action="">
         <div class="_top">
-          <h2>Đặt chỗ trước</h2><span class="number">Số lượng người (*):</span>
-          <input type="number" value="1">
+          <h2>Đặt chỗ trước</h2>
+          <div class="number"><span>Số lượng người (*):</span>
+            <input type="number" value="1">
+          </div>
         </div>
-        <div class="_middle"></div>
+        <div class="_middle">
+          <h3>Thời gian có thể hẹn</h3>
+          <div class="_listdate">
+            <div class="_date"> <span>Thứ 2 - ngày 8</span></div>
+            <div class="_date"> <span>Thứ 2 - ngày 8</span></div>
+            <div class="_date"> <span>Thứ 2 - ngày 8</span></div>
+          </div>
+          <div class="_chosedate">
+            <input type="text" id="datepicker">
+            <select name="chon">
+              <option value="">Message đầu cổ vai</option>
+            </select>
+          </div>
+          <div class="_listtime">
+            <div class="_time"> <span>8:30</span></div>
+            <div class="_time"> <span>8:30</span></div>
+            <div class="_time"> <span>8:30</span></div>
+            <div class="_time"> <span>8:30</span></div>
+            <div class="_time"> <span>8:30</span></div>
+            <div class="_time"> <span>8:30</span></div>
+            <div class="_time"> <span>8:30</span></div>
+            <div class="_time"> <span>8:30</span></div>
+            <div class="_time"> <span>8:30</span></div>
+          </div>
+        </div>
         <div class="_bottom">
-          <input type="text" name="hovaten" required>
-          <input type="text" name="sodienthoai" required>
-          <input type="email" name="email" required>
-          <input type="text" name="magiamgia" required>
+          <input type="text" name="hovaten" placeholder="Họ và tên (*)" required>
+          <input type="text" name="sodienthoai" placeholder="Số điện thoại (*)" required>
+          <input type="email" name="email" placeholder="Email (*)" required>
+          <input type="text" name="magiamgia" placeholder="Mã giảm giá" required>
         </div>
-        <input type="submit" value="submit">
+        <input class="submit" type="submit" value="Đặt ngay">
       </form>
     </section>
     <!--Banggia-->
@@ -475,6 +502,7 @@
     <script type="text/javascript" src="js/jquery.lazy.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

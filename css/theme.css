@@ -2398,7 +2398,126 @@ section.contact #form-contact input[type='submit'] {
 
 .section-booking {
   background: url("../img/spa/bg.jpg") top center no-repeat;
-  height: 1137px; }
+  height: 1137px;
+  padding: 100px; }
+  .section-booking .booking {
+    width: 775px;
+    height: 938px;
+    background: #fff;
+    padding: 50px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3); }
+    .section-booking .booking ._top {
+      margin: 0 0 30px 0; }
+      .section-booking .booking ._top h2 {
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 0 10px 0; }
+      .section-booking .booking ._top .number {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        display: -webkit-flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .section-booking .booking ._top .number input[type="number"] {
+          border: none;
+          color: #0f8a0e;
+          width: 50px;
+          font-size: 20px; }
+        .section-booking .booking ._top .number span {
+          font-size: 16px;
+          color: #989898;
+          margin: 0 10px 0 0; }
+    .section-booking .booking ._middle h3 {
+      font-size: 16px;
+      color: #000;
+      margin: 0 5px 10px 5px;
+      text-transform: uppercase; }
+    .section-booking .booking ._middle ._listdate {
+      margin: 0 0 7px 0;
+      display: inline-block;
+      width: 100%; }
+      .section-booking .booking ._middle ._listdate ._date {
+        width: 33.33%;
+        padding: 5px;
+        float: left;
+        text-align: center; }
+        .section-booking .booking ._middle ._listdate ._date span {
+          display: block;
+          background: #b7b7b7;
+          color: #fff;
+          height: 45px;
+          line-height: 45px;
+          border-radius: 5px; }
+        .section-booking .booking ._middle ._listdate ._date:hover span {
+          background: #0f8a0e; }
+    .section-booking .booking ._middle ._chosedate {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 5px; }
+      .section-booking .booking ._middle ._chosedate #datepicker {
+        width: 40%;
+        height: 45px;
+        background: #fbfbfb;
+        border: 1px solid #b7b7b7;
+        border-radius: 5px;
+        padding: 0 20px; }
+      .section-booking .booking ._middle ._chosedate select {
+        width: 58%;
+        background: #fbfbfb;
+        border: 1px solid #b7b7b7;
+        border-radius: 5px;
+        height: 45px; }
+    .section-booking .booking ._middle ._listtime {
+      margin: 10px 0 0 0; }
+      .section-booking .booking ._middle ._listtime ._time {
+        width: 33.33%;
+        padding: 5px;
+        float: left;
+        text-align: center; }
+        .section-booking .booking ._middle ._listtime ._time span {
+          display: block;
+          color: #000;
+          height: 45px;
+          line-height: 45px;
+          border-radius: 5px;
+          border: 1px solid #b7b7b7; }
+        .section-booking .booking ._middle ._listtime ._time:hover span {
+          background: #0f8a0e;
+          color: #fff; }
+    .section-booking .booking ._bottom {
+      padding: 0 5px; }
+      .section-booking .booking ._bottom input {
+        border: none;
+        border-bottom: 1px solid  #707070;
+        height: 45px;
+        width: 100%;
+        margin: 20px 0 0 0; }
+    .section-booking .booking .submit {
+      width: 330px;
+      height: 75px;
+      border-radius: 50px;
+      background: #0f890e;
+      margin: 30px auto 0;
+      color: #fff;
+      font-size: 30px;
+      text-transform: uppercase;
+      display: block; }
 
 footer .footer-top {
   background: #f5f4f4;

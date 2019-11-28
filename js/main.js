@@ -218,6 +218,7 @@ $(document).ready(function() {
 						}
 				}
 	});
+	$( "#datepicker" ).datepicker();
 	$(window).on('scroll', function() {
 			var wtop = $(window).scrollTop();
 			if (wtop > 500) {
