@@ -218,7 +218,48 @@ $(document).ready(function() {
 						}
 				}
 	});
-	
+	var _video = $('.main_videos');
+	_video.owlCarousel({
+			loop: true,
+			nav: true,
+			navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+			items: 1,
+			autoplay: true,
+			smartSpeed: 200,
+			responsiveClass:true,
+				responsive:{
+						0:{
+								items:1
+						},
+						768:{
+								items:2
+						},
+						1200:{
+								items:3
+						}
+				}
+	});
+	var _category_video = $('.category_video');
+	_category_video.owlCarousel({
+			loop: true,
+			nav: true,
+			navText: ['<i class="fa fa-chevron-left" aria-hidden="true"></i>', '<i class="fa fa-chevron-right" aria-hidden="true"></i>'],
+			items: 1,
+			autoplay: true,
+			smartSpeed: 200,
+			responsiveClass:true,
+				responsive:{
+						0:{
+								items:1
+						},
+						768:{
+								items:2
+						},
+						1200:{
+								items:4
+						}
+				}
+	});
 	$(window).on('scroll', function() {
 			var wtop = $(window).scrollTop();
 			if (wtop > 500) {

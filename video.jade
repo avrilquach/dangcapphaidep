@@ -3,5 +3,89 @@ html
   include inc/head2.jade
   body
     include inc/header.jade
+    // Breadcrumbs
+    section.breadcrumbs.pad30_0
+      .container
+        .row
+          .col-lg-12
+            ul
+              li
+                a(href='#') Trang chủ
+              li
+                a(href='#') Video
+    // Page Videos
+    section.padbt0_30.page_videos
+      .container
+        .row
+          .col-lg-12
+            .top_view
+              img(src='img/video/video1.jpg', alt='Video')
+              .caption
+                h1 Overwatch With Peter Dinklage
+                  span And Lena Headey
+                a(href="#") Xem ngay
+              a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
+                i.far.fa-play-circle
+        .row
+          .owl-carousel.owl-theme.main_videos
+            -for(i=0;i<4;i++)
+              .item
+                .img
+                  img(src='img/video/video2.jpg', alt='')
+                  a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
+                    i.far.fa-play-circle
+                h3 Overwatch With Peter Dinklage And Lena Headey
+                span Jenifer Lopez |  MAY 27, 2016
+        .list_category.padtp30_0
+          h2 Làm đẹp video
+          .row
+            -for(i=0;i<8;i++)
+              .col-lg-3.col-md-6
+                .item
+                  .img
+                    img(src='img/video/video2.jpg', alt='')
+                    a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
+                      i.far.fa-play-circle
+                  h3 Overwatch With Peter Dinklage And Lena Headey
+                  p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+                  span Jenifer Lopez |  MAY 27, 2016
+            .pager
+              ul
+                li.prev
+                  a(href='#')
+                    i.fas.fa-angle-double-left
+                li.current
+                  a(href='#') 1
+                li
+                  a(href='#') 2
+                li.next
+                  a(href='#')
+                    i.fas.fa-angle-double-right
+        .list_category.padtp30_0
+          h2 Đời sống video
+          .owl-carousel.owl-theme.category_video
+            -for(i=0;i<6;i++)
+              .item
+                .img
+                  img(src='img/video/video2.jpg', alt='')
+                  a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
+                    i.far.fa-play-circle
+                h3 Overwatch With Peter Dinklage And Lena Headey
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+                span Jenifer Lopez |  MAY 27, 2016
+        .list_category.padtp30_0
+          h2 Cinema
+          .owl-carousel.owl-theme.category_video
+            -for(i=0;i<6;i++)
+              .item
+                .img
+                  img(src='img/video/video2.jpg', alt='')
+                  a.popup-youtube(href="https://www.youtube.com/watch?v=aMwvlC6RdHc?autoplay=1&amp;rel=0" id="video1")
+                    i.far.fa-play-circle
+                h3 Overwatch With Peter Dinklage And Lena Headey
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+                span Jenifer Lopez |  MAY 27, 2016
+        
+
     include inc/footer.jade
     include inc/script2.jade
