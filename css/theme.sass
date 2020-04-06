@@ -664,7 +664,6 @@ section
     &.filter2
       .inner
         border: 1px solid #E7E7E7
-        padding: 20px
         display: flex
         align-items: center
         .item
@@ -676,6 +675,45 @@ section
             border: none
           &:last-child
             border-right: none
+        ul
+          display: flex
+          position: relative
+          li
+            padding: 20px
+            border-right: 1px solid #E7E7E7
+            img
+              margin:  0 0 0 10px
+            a
+              font-weight: 300
+              font-size: 16px
+              color: #555555
+            ul.sub
+              display: none
+              position: absolute
+              left: -1px
+              background: #fff
+              width: 1210px
+              z-index: 1010
+              border: 1px solid #e7e7e7
+              padding: 20px 0
+              top: 61px
+            
+              li
+                margin: 0
+                border-right: none
+                padding: 0 20px 
+                list-style: disc
+                float: left
+                width: 25%
+                list-style-position: inside
+                a
+                  font-weight: 300
+                  font-size: 16px
+                  line-height: 19px
+                  color: #5A5A5A
+            &:hover
+              ul.sub
+                display: block
     &.filters-mobile
       display: none
 
@@ -4107,3 +4145,5 @@ footer
 
       li
         margin: 0 10px
+.mobile
+  display: none !important
