@@ -3488,7 +3488,7 @@ footer .footer-copyright {
       height: 25px;
       text-align: center;
       display: block; }
-    .pager_bachh-hoa ul li:hover a {
+    .pager_bachh-hoa ul li:hover a, .pager_bachh-hoa ul li.current a {
       width: 25px;
       height: 25px;
       background-color: #0F890E;
