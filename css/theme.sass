@@ -661,6 +661,21 @@ section
           border-radius: 50%
 
   &.filters
+    &.filter2
+      .inner
+        border: 1px solid #E7E7E7
+        padding: 20px
+        display: flex
+        align-items: center
+        .item
+          margin: 0 20px 0 0 
+          padding: 0 20px 0 0
+          border-right: 1px solid #E7E7E7
+          select
+            background: transparent
+            border: none
+          &:last-child
+            border-right: none
     &.filters-mobile
       display: none
 
@@ -4005,6 +4020,27 @@ footer
 
         &.current a
           background: #ed2791
+          color: #fff
+.pager_bachh-hoa
+  ul
+    display: flex
+    align-items: centercenter
+    justify-content: center
+    li
+      margin: 0 10px
+      a
+        font-size: 16px
+        color: #A4A4A4
+        width: 25px
+        height: 25px
+        text-align: center
+        display: block
+      &:hover
+        a
+          width: 25px
+          height: 25px
+          background-color: #0F890E
+          border-radius: 50%
           color: #fff
 
 .box-language

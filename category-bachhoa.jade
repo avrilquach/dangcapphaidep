@@ -1,0 +1,67 @@
+doctype html
+html
+	include inc/head.jade
+	body
+		include inc/header.jade
+		// Breadcrumbs
+		section.breadcrumbs.pad30_0.breadcrumbs3
+			.container
+				.row
+					.col-lg-12
+						ul
+							li
+								a(href='#') Home 
+							li
+								a(href='#') Các loại rau củ
+		// Filters
+		section.filters.filter2
+			.container
+				.row
+					.col-lg-12
+						.inner
+							.item
+								select#danhmucsanpham
+									option(value='danhmucsanpham') Danh mục sản phẩm
+							.item
+								select#thuonghieu
+									option(value='thuonghieu') Thương hiệu
+							.item
+								select#mucgia
+									option(value='mucgia') Mức giá
+							.item
+								select#xuatxu
+									option(value='xuatxu') Xuất xứ
+							.item
+								select#banchaynhat
+									option(value='banchaynhat') Bán chạy nhất          
+		// Filters
+		section.products2.pad20_0
+			.container
+				.row.pad30_0
+					-for(i=0;i<8;i++)	
+						.col-lg-3.col-md-6.col-6
+							.item
+								a(href="#")
+									.img.hover-img.animated
+										img.lazy(data-src='img/bachhoa/img6.jpg')
+									h5 Bánh gạo One-One Gold vị Phô mai ngô gói 118g
+									span.options
+										span.price
+											span.new 15.000đ
+								a.add-to-cart
+									img(src='img/bachhoa/cart.svg')
+									span Thêm vào giỏ hàng
+		.pager_bachh-hoa.padbt0_50
+			ul
+				li.prev
+					a(href='#')
+						i.fas.fa-angle-left
+				li.current
+					a(href='#') 1
+				li
+					a(href='#') 2
+				li.next
+					a(href='#')
+						i.fas.fa-angle-right
+		include inc/footer.jade
+		include inc/script3.jade

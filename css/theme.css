@@ -557,6 +557,25 @@ section.brands .owl-dots {
       display: block;
       border-radius: 50%; }
 
+section.filters.filter2 .inner {
+  border: 1px solid #E7E7E7;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  section.filters.filter2 .inner .item {
+    margin: 0 20px 0 0;
+    padding: 0 20px 0 0;
+    border-right: 1px solid #E7E7E7; }
+    section.filters.filter2 .inner .item select {
+      background: transparent;
+      border: none; }
+    section.filters.filter2 .inner .item:last-child {
+      border-right: none; }
+
 section.filters.filters-mobile {
   display: none; }
   section.filters.filters-mobile ul.click-tab {
@@ -3449,6 +3468,32 @@ footer .footer-copyright {
       .box-language ._box_ ul li.current a {
         background: #ed2791;
         color: #fff; }
+
+.pager_bachh-hoa ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: centercenter;
+  -ms-flex-align: centercenter;
+  align-items: centercenter;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .pager_bachh-hoa ul li {
+    margin: 0 10px; }
+    .pager_bachh-hoa ul li a {
+      font-size: 16px;
+      color: #A4A4A4;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      display: block; }
+    .pager_bachh-hoa ul li:hover a {
+      width: 25px;
+      height: 25px;
+      background-color: #0F890E;
+      border-radius: 50%;
+      color: #fff; }
 
 .box-language ._bg_ {
   position: fixed;
