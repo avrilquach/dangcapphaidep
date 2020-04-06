@@ -63,11 +63,13 @@ img
   h2
     text-align: center
     padding: 0 0 15px 0
-    span 
+
+    span
       text-transform: uppercase
       font-size: 30px
       color: #323232
       position: relative
+
       &::after
         content: ""
         width: 100px
@@ -76,6 +78,7 @@ img
         position: absolute
         top: 20px
         right: -120px
+
       &::before
         content: ""
         width: 100px
@@ -84,11 +87,13 @@ img
         position: absolute
         top: 20px
         left: -120px
+
   p
     font-size: 16px
     color: #636363
     padding: 0 30px
     text-align: center
+
 .heading
   h1, h2, h4
     text-transform: uppercase
@@ -108,7 +113,25 @@ img
     right: 0
     margin: 0 auto
     bottom: 25px
+.heading-bachhoa
+  h1, h2, h4
+    text-transform: uppercase
+    font-size: 50px
+    color: #0F890E
+    text-align: center
+    padding: 0 0 30px 0
+    position: relative
 
+  h1::after, h2::after, h4::after
+    content: ""
+    background: #0F890E
+    width: 135px
+    height: 2px
+    position: absolute
+    left: 0
+    right: 0
+    margin: 0 auto
+    bottom: 25px
 .hover-img:hover
   -webkit-animation-name: flash
   animation-name: flash
@@ -393,6 +416,9 @@ header
 
 section
   &.banner
+    &.banner-bachhoa
+      .item
+        height: 431px
     .item
       height: 550px
       display: block
@@ -1520,7 +1546,14 @@ section
           padding: 0 10px
           color: #434343
 
-          &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+          &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder
+            color: #434343
+
+          &::-webkit-input-placeholder
+            color: #434343
+            color: #434343
+
+          &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
             color: #434343
 
       .form-captcha
@@ -1542,7 +1575,14 @@ section
           padding: 0 10px
           color: #434343
 
-          &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+          &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder
+            color: #434343
+
+          &::-webkit-input-placeholder
+            color: #434343
+            color: #434343
+
+          &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
             color: #434343
 
       .form-submit
@@ -1688,7 +1728,14 @@ section
               color: #636363
               padding: 0 160px 0 10px
 
-              &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+              &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder
+                color: #636363
+
+              &::-webkit-input-placeholder
+                color: #636363
+                color: #636363
+
+              &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
                 color: #636363
 
             &[type='submit']
@@ -1841,14 +1888,24 @@ section
               right: 25px
               top: 25px
 
-          .result_ite_box ul li
-            padding: 10px
+          .result_ite_box
+            ul
+              li
+                padding: 10px
 
-            &:hover
-              background: #f5f4f4
+              height: 200px
+              overflow-y: scroll
 
-            a
-              color: #000
+            &.result_q ul li
+              width: 50%
+              float: left
+
+            ul li
+              &:hover
+                background: #f5f4f4
+
+              a
+                color: #000
 
     .box-hoa-don
       padding: 20px 0
@@ -2061,7 +2118,14 @@ section
         width: 100%
         margin: 0 0 20px 0
 
-        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder
+          color: #434343
+
+        &::-webkit-input-placeholder
+          color: #434343
+          color: #434343
+
+        &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
           color: #434343
 
       textarea
@@ -2072,7 +2136,14 @@ section
         width: 100%
         margin: 0 0 20px 0
 
-        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder
+          color: #434343
+
+        &::-webkit-input-placeholder
+          color: #434343
+          color: #434343
+
+        &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
           color: #434343
 
       input[type='submit']
@@ -2691,33 +2762,155 @@ section
 
     img
       max-width: 100%
+.products2
+  .nav-tabs
+    border-bottom: none
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+    li h3
+      font-size: 20px
+      color: #414141
+      margin: 0 40px
+      text-align: center
+      display: block
+      cursor: pointer
+
+      &.active
+        color: #0F890E
+        border-bottom: 1px solid #0F890E
+
+  .tab-content
+    width: 100%
+
+  .main-products
+    .item
+      margin: 15px
+      display: block
+
+    .owl-nav
+      position: absolute
+      width: 100%
+      top: 45%
+
+      i
+        color: #fff
+        width: 40px
+        height: 40px
+        background: #c6c6c6
+        text-align: center
+        line-height: 40px
+
+      .owl-prev
+        left: -50px
+        position: absolute
+
+      .owl-next
+        right: -50px
+        position: absolute
+
+  .item
+    .img
+      position: relative
+
+      span.sticker
+        padding: 0 5px
+        color: #fff
+        position: absolute
+        top: 15px
+        left: 15px
+        text-transform: uppercase
+        z-index: 5
+        background: #0f890e
+
+    h5
+      color: #636363
+      font-size: 14px
+      margin: 10px 0 3px 0
+
+    p
+      font-size: 13px
+      font-style: italic
+      color: #868686
+      margin: 0 0 5px 0
+
+    span.options
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      display: -webkit-flex
+      -webkit-box-align: center
+      -ms-flex-align: center
+      align-items: center
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+
+      span
+        &.price
+          display: -webkit-box
+          display: -ms-flexbox
+          display: flex
+          display: -webkit-flex
+          -webkit-box-align: center
+          -ms-flex-align: center
+          align-items: center
+
+          .new
+            color: #ee3597
+            font-weight: bold
+
+          .old
+            font-size: 12px
+            color: #636363
+            margin: 0 0 0 5px
+            text-decoration: line-through
+
+        &.rate i
+          font-size: 12px
+          color: #acacac
+
+          &.green
+            color: #0f890e
+
+    img
+      max-width: 100%
+
 
 .main-spa-1
   .owl-item
     text-align: center
     padding: 15px
+
   h3
     font-size: 16px
     color: #000
+
 .main-spa-2
   .owl-item
     padding: 15px
+
   .item
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3)
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3)
     display: block
     background: #fbf3f3
+
     .caption
       padding: 15px 15px 30px 15px
       text-align: center
+
       h3
         font-size: 18px
         color: #000
         margin: 0 0 5px 0
+
       p
         font-size: 16px
         color: #636363
         margin: 0 0 20px 0
+
       span
         width: 135px
         height: 35px
@@ -2727,38 +2920,43 @@ section
         display: block
         line-height: 33px
         margin: 0 auto
+
     &:hover
       border-bottom: 2px solid #0f890e
-.main-spa-custom
-  .owl-nav
+
+.main-spa-custom .owl-nav
+  position: absolute
+  width: 100%
+  top: 45%
+
+  i
+    color: #b1b1b1
+    font-size: 30px
+
+  .owl-prev
+    left: -60px
     position: absolute
-    width: 100%
-    top: 45%
 
-    i
-      color: #b1b1b1
-      font-size: 30px
+  .owl-next
+    right: -60px
+    position: absolute
 
-    .owl-prev
-      left: -60px
-      position: absolute
-
-    .owl-next
-      right: -60px
-      position: absolute
 .main-customer
   .bg_
     background: #fcf7f7
     padding: 30px 50px 70px 50px
     text-align: center
-    p 
+
+    p
       font-size: 16px
       color: #000
       margin: 0 0 15px 0
+
     span.name
       font-size: 20px
       color: #0f890e
       text-transform: uppercase
+
   .caption
     text-align: center
     width: 235px
@@ -2769,20 +2967,23 @@ section
     bottom: 60px
     z-index: 10
 
-  &.owl-carousel .owl-item
-    img
-      width: auto
-      display: block
-      margin: 0 auto
+  &.owl-carousel .owl-item img
+    width: auto
+    display: block
+    margin: 0 auto
+
   span.rating
     margin: 10px 0 0 0
     display: block
+
     i
       font-size: 20px
       color: #a1a1a1
       margin: 0 10px 0 0
+
       &.green
         color: #0f8a0e
+
   .owl-nav
     position: absolute
     width: 100%
@@ -2800,83 +3001,110 @@ section
       right: 30%
       position: absolute
 
-.main-bang-gia
-  ._item
-    display: flex
-    display: -webkit-flex
-    padding: 20px 0
-    justify-content: space-between
-    ._left
-      padding: 0 20px 0 0
-      h4
-        font-size: 20px
-        color: #000
-        margin: 0 0 10px 0
-      p
-        padding: 0
-        font-size: 16px
-    ._right
-      text-align: right
-      span.price
-        display: block
-        font-size: 20px
-        margin: 0 0 10px 0
-      a
-        width: 80px
-        height: 25px
-        border-radius: 20px
-        background: #0f890e
-        display: block
-        color: #fff
-        text-align: center
-        font-size: 12px
-        line-height: 25px
+.main-bang-gia ._item
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  display: -webkit-flex
+  padding: 20px 0
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+  ._left
+    padding: 0 20px 0 0
+
+    h4
+      font-size: 20px
+      color: #000
+      margin: 0 0 10px 0
+
+    p
+      padding: 0
+      font-size: 16px
+
+  ._right
+    text-align: right
+
+    span.price
+      display: block
+      font-size: 20px
+      margin: 0 0 10px 0
+
+    a
+      width: 80px
+      height: 25px
+      border-radius: 20px
+      background: #0f890e
+      display: block
+      color: #fff
+      text-align: center
+      font-size: 12px
+      line-height: 25px
+
 .section-booking
-  background: url('../img/spa/bg.jpg') top center no-repeat
+  background: url("../img/spa/bg.jpg") top center no-repeat
   height: 1137px
   padding: 100px
+
   .booking
     width: 775px
     height: 938px
     background: #fff
     padding: 50px
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3)
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3)
+
     ._top
       margin: 0 0 30px 0
+
       h2
         font-size: 40px
         text-align: center
         text-transform: uppercase
         margin: 0 0 10px 0
+
       .number
+        display: -webkit-box
+        display: -ms-flexbox
         display: flex
         display: -webkit-flex
+        -webkit-box-pack: center
+        -ms-flex-pack: center
         justify-content: center
+        -webkit-box-align: center
+        -ms-flex-align: center
         align-items: center
+
         input[type="number"]
           border: none
           color: #0f8a0e
           width: 50px
           font-size: 20px
+
         span
           font-size: 16px
           color: #989898
           margin: 0 10px 0 0
+
     ._middle
       h3
         font-size: 16px
         color: #000
         margin: 0 5px 10px 5px
         text-transform: uppercase
+
       ._listdate
         margin: 0 0 7px 0
         display: inline-block
         width: 100%
+
         ._date
           width: 33.33%
           padding: 5px
           float: left
           text-align: center
+
           span
             display: block
             background: #b7b7b7
@@ -2884,16 +3112,24 @@ section
             height: 45px
             line-height: 45px
             border-radius: 5px
-          &:hover
-            span
-              background: #0f8a0e
+
+          &:hover span
+            background: #0f8a0e
+
       ._chosedate
+        display: -webkit-box
+        display: -ms-flexbox
         display: flex
         display: -webkit-flex
+        -webkit-box-align: center
+        -ms-flex-align: center
         align-items: center
         width: 100%
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
         justify-content: space-between
         padding: 5px
+
         #datepicker
           width: 40%
           height: 45px
@@ -2901,19 +3137,23 @@ section
           border: 1px solid #b7b7b7
           border-radius: 5px
           padding: 0 20px
+
         select
           width: 58%
           background: #fbfbfb
           border: 1px solid #b7b7b7
           border-radius: 5px
           height: 45px
+
       ._listtime
         margin: 10px 0 0 0
+
         ._time
           width: 33.33%
           padding: 10px 5px
           float: left
           text-align: center
+
           span
             display: block
             color: #000
@@ -2921,18 +3161,21 @@ section
             line-height: 45px
             border-radius: 5px
             border: 1px solid #b7b7b7
-          &:hover
-            span
-              background: #0f8a0e
-              color: #fff
+
+          &:hover span
+            background: #0f8a0e
+            color: #fff
+
     ._bottom
       padding: 0 5px
+
       input
         border: none
         border-bottom: 1px solid  #707070
         height: 45px
         width: 100%
-        margin: 15px 0 0 0  
+        margin: 15px 0 0 0
+
     .submit
       width: 330px
       height: 75px
@@ -2943,39 +3186,50 @@ section
       font-size: 30px
       text-transform: uppercase
       display: block
+
 .section-trai-nghiem-dich-vu
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
   dipslay: -webkit-flex
   overflow: hidden
+
   ._left
     width: 50%
     float: left
+
     img
       max-width: none !important
+
   ._right
     width: 50%
     float: left
     background: #fbf3f3
     padding: 70px
     position: relative
+
     &::before
       content: ""
       position: absolute
       width: 100px
-      height: 100px 
+      height: 100px
       left: -50px
       background: #fbf3f3
       border-radius: 50%
       top: 40%
+
     ._content
       max-width: 540px
+
     h2
       font-size: 25px
       color: #000
       margin: 0 0 20px 0
+
     p
       font-size: 16px
       color: #636363
+
     a
       width: 200px
       height: 52px
@@ -2987,14 +3241,18 @@ section
       text-align: center
       text-transform: uppercase
       margin: 20px 0 0 0
+
 .section-map
   #block-map
     height: 700px
     width: 100%
+
   .content_map
     text-align: center
+
 .main-video
   width: 100%
+
   .carousel-item
     &::before
       content: ""
@@ -3005,39 +3263,49 @@ section
       left: 0
       right: 0
       bottom: 0
-      background: rgba(0,0,0,0.5)
+      background: rgba(0, 0, 0, 0.5)
+
     .popup-youtube
       position: absolute
       top: 40%
       left: 0
       right: 0
       text-align: center
+
       i
         font-size: 100px
         color: #fff
+
   .carousel-indicators
     bottom: 30px
+
     li
       width: 125px
       border-radius: 5px
       margin: 0 5px
       display: inline-block
       height: 100%
-      img 
+
+      img
         border-radius: 5px
+
       &.active
         border: 2px solid #0f8a0e
+
     ._prev
       position: absolute
       left: 0
+
     ._next
       position: absolute
       right: 0
+
     ._prev, ._next
       top: 22px
-      i
-        font-size: 30px
-        color: #b1b1b1
+
+    ._prev i, ._next i
+      font-size: 30px
+      color: #b1b1b1
 
 footer
   .footer-top
@@ -3154,7 +3422,14 @@ footer
         color: #8c8c8c
         padding: 0 10px
 
-        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder
+          font-style: italic
+
+        &::-webkit-input-placeholder
+          font-style: italic
+          font-style: italic
+
+        &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
           font-style: italic
 
     &.submit
@@ -3170,7 +3445,14 @@ footer
           color: #8c8c8c
           padding: 0 10px
 
-          &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+          &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder
+            font-style: italic
+
+          &::-webkit-input-placeholder
+            font-style: italic
+            font-style: italic
+
+          &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
             font-style: italic
 
         &[type="submit"]
@@ -3212,7 +3494,14 @@ footer
         font-style: italic
         padding: 0 10px 0 50px
 
-        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
+        &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder
+          color: #a29ba5
+
+        &::-webkit-input-placeholder
+          color: #a29ba5
+          color: #a29ba5
+
+        &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
           color: #a29ba5
 
       &[type="submit"]
@@ -3394,28 +3683,34 @@ footer
 
   &.active
     right: 30px
+
 .page_videos
   .top_view
     position: relative
+
     &::before
       position: absolute
-      background: rgba(0,0,0,0.8)
+      background: rgba(0, 0, 0, 0.8)
       left: 0
       right: 0
       width: 100%
       height: 100%
       content: ""
+
     .caption
       position: absolute
       z-index: 5
       padding: 30px
       top: 20%
+
       h1
         font-size: 50px
         color: #fff
+
         span
           display: block
           font-size: 40px
+
       a
         font-size: 25px
         background: #ed2791
@@ -3423,68 +3718,81 @@ footer
         color: #fff
         margin: 30px 0 0 0
         display: inline-block
+
     .popup-youtube
       position: absolute
       right: 30px
       bottom: 30px
+
       i
         font-size: 50px
         color: #fff
+
   .owl-item
     padding: 15px
+
   .item
     margin: 0 0 30px 0
+
     .img
       position: relative
       margin: 0 0 10px 0
+
       &::before
         content: ""
         position: absolute
-        background: rgba(0,0,0,0.5)
+        background: rgba(0, 0, 0, 0.5)
         top: 0
         left: 0
         right: 0
         width: 100%
         height: 100%
+
       .popup-youtube
         position: absolute
         right: 0
         left: 0
         top: 45%
-        margin: 0 auto 
+        margin: 0 auto
         text-align: center
+
         i
           font-size: 30px
           color: #fff
-    h3 
-      font-size: 20px   
+
+    h3
+      font-size: 20px
       margin: 0 0 10px 0
+
     p
-     font-size: 16px
-     color: #636363
-     margin: 0 0 10px 0
+      font-size: 16px
+      color: #636363
+      margin: 0 0 10px 0
+
     span
       font-size: 14px
       font-style: italic
+
   .owl-nav
+    position: absolute
+    top: 30%
+    width: 100%
+    z-index: 5
+
+    i
+      color: #fff
+      font-size: 30px
+
+    .owl-prev
+      left: 30px
       position: absolute
-      top: 30%
-      width: 100%
       z-index: 5
 
-      i
-        color: #fff
-        font-size: 30px
+    .owl-next
+      right: 30px
+      position: absolute
+      z-index: 5
 
-      .owl-prev
-        left: 30px
-        position: absolute
-        z-index: 5
-
-      .owl-next
-        right: 30px
-        position: absolute
-        z-index: 5
 .list_category
   h2
     border-bottom: 1px solid #b7b7b7
@@ -3493,6 +3801,7 @@ footer
     padding: 0 0 10px 0
     text-transform: uppercase
     position: relative
+
     &::before
       content: ""
       position: absolute
@@ -3500,33 +3809,104 @@ footer
       height: 1px
       background: #ed2791
       bottom: -1px
+
   .owl-nav
     top: 20%
-  .owl-item
-    .item
-      margin: 0
+
+  .owl-item .item
+    margin: 0
+
   .pager
     width: 100%
+
     ul
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
       display: -webkit-flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
+
       li
         margin: 0 5px
+
         a
           width: 30px
           height: 30px
           background: #ebebeb
-          font-size: 12px 
+          font-size: 12px
           display: block
           border-radius: 50%
           color: #000
           line-height: 30px
           text-align: center
-        &.current
-          a
-            background: #ed2791
-            color: #fff
 
+        &.current a
+          background: #ed2791
+          color: #fff
 
-        
+.box-language
+  ._bg_
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.5)
+    z-index: 20
+
+  ._box_
+    width: 600px
+    background: #fff
+    position: fixed
+    top: 20%
+    margin: 0 auto
+    left: 0
+    right: 0
+    z-index: 25
+    padding: 70px
+    border-radius: 10px
+    text-align: center
+
+    span.close
+      color: #000
+      position: absolute
+      right: 20px
+      top: 20px
+
+    h2
+      position: relative
+      display: inline-block
+      text-transform: uppercase
+      margin: 0 0 30px 0
+
+      &::before
+        content: ""
+        width: 40px
+        height: 1px
+        background: #000
+        position: absolute
+        left: -50px
+        top: 25px
+
+      &::after
+        content: ""
+        width: 40px
+        height: 1px
+        background: #000
+        position: absolute
+        right: -50px
+        top: 25px
+
+    ul
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      display: -webkit-flex
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+
+      li
+        margin: 0 10px

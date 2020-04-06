@@ -260,6 +260,9 @@ $(document).ready(function() {
 						}
 				}
 	});
+	$('.box-language .close').click(function(e){
+		$('.box-language').hide();
+	});
 	$(window).on('scroll', function() {
 			var wtop = $(window).scrollTop();
 			if (wtop > 500) {
