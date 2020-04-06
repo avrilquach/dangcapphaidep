@@ -4,6 +4,35 @@ html
 	body
 		include inc/header.jade
 		include inc/banner2.jade
+		.products.heading.pad30_0
+			.container
+				.row
+					.owl-carousel.owl-theme.main-products.main-bach-hoa
+						a.item(href='#').bg1
+							.inner
+								h5 trái cây
+								.img.hover-img2.animated
+									img(src='img/bachhoa/image 118.png')
+						a.item(href='#').bg2
+							.inner
+								h5 hải sản
+								.img.hover-img2.animated
+									img(src='img/bachhoa/image 116.png')
+						a.item(href='#').bg3
+							.inner
+								h5 thịt tươi
+								.img.hover-img2.animated
+									img(src='img/bachhoa/image 117.png')
+						a.item(href='#').bg4
+							.inner
+								h5 đồ dùng gia đình
+								.img.hover-img2.animated
+									img(src='img/bachhoa/Group 133.png')
+						a.item(href='#').bg1
+							.inner
+								h5 trái cây
+								.img.hover-img2.animated
+									img(src='img/bachhoa/image 118.png')
 		section.products2.heading-bachhoa.pad30_0
 			.container
 				.row
@@ -25,81 +54,76 @@ html
 								h3(data-toggle='tab', href='#cate1_tab6') Đồ khô
 					.tab-content
 						#cate1_tab1.tab-pane.fade.in.active.show
-							.row.padtp50_0
-								.col-lg-3.col-md-6.col-6
-									a.item(href='#')
-										.img.hover-img2.animated
-											img.lazy(data-src='img/product1.jpg')
-											span.sticker Sale
-										h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-										p Tinh chất dưỡng sáng da, nâng cơ mặt...
-										span.options
-											span.price
-												span.new 3.700.000đ
-												span.old 4.700.000đ
-											span.rate
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star
-								.col-lg-3.col-md-6.col-6
-									a.item(href='#')
-										.img.hover-img2.animated
-											img.lazy(data-src='img/product1.jpg')
-											span.sticker Sale
-										h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-										p Tinh chất dưỡng sáng da, nâng cơ mặt...
-										span.options
-											span.price
-												span.new 3.700.000đ
-												span.old 4.700.000đ
-											span.rate
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star
-								.col-lg-3.col-md-6.col-6
-									a.item(href='#')
-										.img.hover-img2.animated
-											img.lazy(data-src='img/product1.jpg')
-											span.sticker Sale
-										h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-										p Tinh chất dưỡng sáng da, nâng cơ mặt...
-										span.options
-											span.price
-												span.new 3.700.000đ
-												span.old 4.700.000đ
-											span.rate
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star
-								.col-lg-3.col-md-6.col-6
-									a.item(href='#')
-										.img.hover-img2.animated
-											img.lazy(data-src='img/product1.jpg')
-											span.sticker Sale
-										h5 Kem dưỡng trắng da chống lão hóa chiết suất từ callogen...
-										p Tinh chất dưỡng sáng da, nâng cơ mặt...
-										span.options
-											span.price
-												span.new 3.700.000đ
-												span.old 4.700.000đ
-											span.rate
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star.green
-												i.fa.fa-star
+							.row.pad30_0
+								-for(i=0;i<8;i++)	
+									.col-lg-3.col-md-6.col-6
+										.item
+											a(href="#")
+												.img.hover-img.animated
+													img.lazy(data-src='img/bachhoa/img3.jpg')
+												h5 Bánh gạo One-One Gold vị Phô mai ngô gói 118g
+												span.options
+													span.price
+														span.new 15.000đ
+											a.add-to-cart
+												img(src='img/bachhoa/cart.svg')
+												span Thêm vào giỏ hàng
+								a.xem-them Xem thêm
+							.owl-carousel.owl-theme.main-banner-col2
+								.item(href='#', style='width: 600px')
+									img.hover-img.animated(src='img/bachhoa/img1.jpg')
+								.item(href='#', style='width: 600px')
+									img.hover-img.animated(src='img/bachhoa/img2.jpg')
 
 						#cate1_tab2.tab-pane.fade
 						#cate1_tab3.tab-pane.fade
 						#cate1_tab4.tab-pane.fade
 						#cate1_tab5.tab-pane.fade
 						#cate1_tab6.tab-pane.fade
-
+		section.products2.heading-bachhoa.pad30_0
+			.container
+				.row
+					.col-lg-12
+						h2 sữa và sản phẩm từ sữa
+				.row.pad30_0
+					-for(i=0;i<8;i++)	
+						.col-lg-3.col-md-6.col-6
+							.item
+								a(href="#")
+									.img.hover-img.animated
+										img.lazy(data-src='img/bachhoa/img4.jpg')
+									h5 Bánh gạo One-One Gold vị Phô mai ngô gói 118g
+									span.options
+										span.price
+											span.new 15.000đ
+								a.add-to-cart
+									img(src='img/bachhoa/cart.svg')
+									span Thêm vào giỏ hàng
+					a.xem-them Xem thêm
+				.owl-carousel.owl-theme.main-banner-col2
+					.item(href='#', style='width: 600px')
+						img.hover-img.animated(src='img/bachhoa/img1.jpg')
+					.item(href='#', style='width: 600px')
+						img.hover-img.animated(src='img/bachhoa/img2.jpg')
+		section.products2.heading-bachhoa.pad30_0
+			.container
+				.row
+					.col-lg-12
+						h2 thịt hải sản tươi sống
+				.row.pad30_0
+					-for(i=0;i<8;i++)	
+						.col-lg-3.col-md-6.col-6
+							.item
+								a(href="#")
+									.img.hover-img.animated
+										img.lazy(data-src='img/bachhoa/img6.jpg')
+									h5 Bánh gạo One-One Gold vị Phô mai ngô gói 118g
+									span.options
+										span.price
+											span.new 15.000đ
+								a.add-to-cart
+									img(src='img/bachhoa/cart.svg')
+									span Thêm vào giỏ hàng
+					a.xem-them Xem thêm
 		include inc/footer.jade
-		include inc/script.jade
+		include inc/script3.jade
