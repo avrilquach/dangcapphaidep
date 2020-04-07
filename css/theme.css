@@ -2538,7 +2538,7 @@ section.contact #form-contact input[type='submit'] {
   .products2 .item .img {
     position: relative;
     padding: 0 0 20px 0;
-    margin: 0 0 20px 00;
+    margin: 0 0 20px 0;
     border-bottom: 1px solid #DCD8D8; }
     .products2 .item .img span.sticker {
       padding: 0 5px;
@@ -3703,14 +3703,16 @@ footer .footer-copyright {
       border-radius: 10px;
       width: 140px;
       height: 55px;
-      padding: 0 50px; }
+      padding: 0 50px;
+      text-align: center; }
     .detailbh .options .number span {
       background: #F0F0F0;
       font-size: 20px;
       width: 44px;
       height: 55px;
       text-align: center;
-      line-height: 55px; }
+      line-height: 55px;
+      cursor: pointer; }
       .detailbh .options .number span:first-child {
         position: absolute;
         left: 0;
@@ -3771,16 +3773,14 @@ footer .footer-copyright {
 .detailbh .promotions {
   padding: 20px 0; }
   .detailbh .promotions li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 5px 0; }
+    padding: 5px 0;
+    font-size: 16px; }
     .detailbh .promotions li span {
-      width: 100px;
       font-weight: bold;
-      color: #212121; }
+      color: #212121;
+      float: left;
+      margin: 0 10px 0 0; }
     .detailbh .promotions li p {
-      width: calc( 100% - 100px);
       color: #767676; }
 
 .detailbh .gallery {
