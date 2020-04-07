@@ -1059,8 +1059,8 @@ section.info_detailp .read-more {
     section.info_detailp .read-more a i {
       margin: 0 0 0 20px; }
 
-section.info_detailpd#danhgia .reviewvote ul li span.line {
-  width: 300px; }
+section.info_detailpd#danhgia .reviewvote .row:nth-child(1) {
+  border-top: none; }
 
 section.info_detailpd .products .col-6 {
   padding: 0px 5px; }

@@ -120,6 +120,13 @@
     top: 0; }
     .page_videos .top_view .caption h1, .page_videos .top_view .caption h1 span {
       font-size: 30px; }
+  .detailbh .gallery {
+    height: auto; }
+  .detailbh .options.options2 {
+    display: block; }
+    .detailbh .options.options2 .add-to-cart2 {
+      margin: 20px 0 0 0;
+      width: 100%; }
   .mobile {
     display: block !important; }
   .desktop {
@@ -362,6 +369,13 @@
       border-bottom: 1px solid #E7E7E7;
       margin: 0;
       padding: 20px 0; }
+  .heading-bachhoa h4:after {
+    display: none; }
+  .product_detail_ct .tab-content .bg {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
   footer .footer-top .col-md-6, footer .footer-bottom .col-md-6 {
     margin: 0 0 30px 0; }
   footer .footer-top .col-md-6:last-child, footer .footer-bottom .col-md-6:last-child {
